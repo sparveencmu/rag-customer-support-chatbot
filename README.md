@@ -75,7 +75,3 @@ streamlit run app.py
 ```
 
 `rag_chatbot.ipynb` walks through each step with outputs, including the optional web-page ingestion with an offline fallback.
-
-## Acknowledgments
-
-Built as part of the [ByteByteGo](https://bytebytego.com/) AI Engineering course, which provided the project outline and the fictional Everstorm policy documents. The implementation, analysis, and evaluation findings are my own.
