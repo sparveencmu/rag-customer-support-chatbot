@@ -46,7 +46,7 @@ flowchart LR
 
 ## Limitations and what I'd improve
 
-Testing showed a real failure mode. Asked about refunds, the bot answered that *"Final Sale" and custom-embroidered items are eligible for a refund*, but the policy says the opposite: **"no return unless defective."** It also misstated the holiday return window. Retrieval found the right chunk; the 1B-parameter model then misread it.
+Testing showed a real failure mode. Asked about refunds, the bot answered that *"Final Sale" and custom-embroidered items are eligible for a refund*, but the policy says the opposite: **"no return unless defective."** It also misstated the holiday return window. The answer clearly drew on the return-policy section, but the 1B-parameter model inverted the rule. Small models are prone to this kind of error, which is why model size is the first thing I'd change.
 
 To make this production-ready, I would:
 - **Add an evaluation set:** questions with known answers from the policies, scored automatically for correctness and grounding, so regressions like this are caught.
