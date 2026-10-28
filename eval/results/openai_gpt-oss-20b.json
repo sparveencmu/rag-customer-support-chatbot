@@ -1,0 +1,82 @@
+[
+  {
+    "id": "final_sale",
+    "question": "Can I return a Final Sale or custom-embroidered item?",
+    "expected": "No. Final Sale and custom-embroidered items cannot be returned unless defective.",
+    "answer": "No – Final Sale and custom‑embroidered items can only be returned if they are defective. [source]",
+    "retrieved": true,
+    "auto_pass": true
+  },
+  {
+    "id": "holiday_window",
+    "question": "I bought a gift on November 15th. Until when can it be returned?",
+    "expected": "Holiday gift purchases made 1 Nov to 31 Dec can be returned until 31 Jan.",
+    "answer": "You can return the gift until **January 31**. [source]",
+    "retrieved": true,
+    "auto_pass": true
+  },
+  {
+    "id": "return_window",
+    "question": "How many days do I have to return an item, and what condition must it be in?",
+    "expected": "30 days from delivery; unworn, unwashed, no odors, tags attached.",
+    "answer": "You can return most items within **30 days of delivery** for a refund or free size exchange. The item must be **unworn and in its original condition** (no heavy wear, damage, or alterations).  \n\n*Holiday‑gift purchases made between Nov 1 – Dec 31 are eligible until Jan 31.*  \n\n[source: Easy‑Fit Promise & Return Window Exceptions]",
+    "retrieved": true,
+    "auto_pass": false
+  },
+  {
+    "id": "free_shipping",
+    "question": "Is standard shipping free in the US?",
+    "expected": "Free for orders of $75 or more; $7.95 below $75.",
+    "answer": "Standard shipping in the U.S. is **not free for all orders**.  \n- Orders **under $75** cost **$7.95** for standard shipping.  \n- Orders **$75 or more** qualify for **free standard shipping**.  \n\n[source: shipping rates table]",
+    "retrieved": true,
+    "auto_pass": true
+  },
+  {
+    "id": "east_coast",
+    "question": "How long does standard delivery take to the US East Coast?",
+    "expected": "4 to 5 business days.",
+    "answer": "Standard delivery to the U.S. East Coast takes **4–5 business days**【source: context】.",
+    "retrieved": true,
+    "auto_pass": true
+  },
+  {
+    "id": "address_change",
+    "question": "I entered the wrong shipping address. Can I still change it?",
+    "expected": "Contact logistics@everstorm.example within 30 minutes of placing the order; once manifested it cannot be rerouted.",
+    "answer": "Yes – you can change the address if you do it within 30 minutes of placing the order. Contact logistics@everstorm.example to request the change. Once the parcel is “Manifested,” the address can no longer be altered. [source]",
+    "retrieved": true,
+    "auto_pass": true
+  },
+  {
+    "id": "crypto",
+    "question": "Can I pay with cryptocurrency?",
+    "expected": "Yes, USDC on Ethereum Mainnet for orders above $500, via Coinbase Commerce.",
+    "answer": "Yes – we accept USDC on Ethereum Mainnet for orders over $500. Choose “Coinbase Commerce” at checkout and the rate is locked for 15 minutes. [source]",
+    "retrieved": true,
+    "auto_pass": true
+  },
+  {
+    "id": "gift_return",
+    "question": "If someone returns a gift I bought them, will I get the refund?",
+    "expected": "No. Gift returns are issued as store credit to the recipient, and the original purchaser is not notified.",
+    "answer": "No. When a gift is returned, the refund is sent as store credit to the recipient’s email address, and the original purchaser is not notified. [source]",
+    "retrieved": true,
+    "auto_pass": true
+  },
+  {
+    "id": "warranty",
+    "question": "My boot sole separated after 8 months. Is that covered?",
+    "expected": "Yes. Manufacturing defects such as sole separation are covered for 12 months; file a Warranty Claim with 3 photos.",
+    "answer": "Yes—sole separation is a covered manufacturing defect under the 12‑month warranty. Submit a **“Warranty Claim”** in the portal, upload three photos of the defect, and a replacement will ship the next business day.",
+    "retrieved": true,
+    "auto_pass": true
+  },
+  {
+    "id": "unanswerable",
+    "question": "Do you offer price matching if I find a lower price elsewhere?",
+    "expected": "Not covered by the documents; the bot should say it doesn't know.",
+    "answer": "I don't know based on the retrieved documents.",
+    "retrieved": null,
+    "auto_pass": true
+  }
+]

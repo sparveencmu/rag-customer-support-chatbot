@@ -1,0 +1,82 @@
+[
+  {
+    "id": "final_sale",
+    "question": "Can I return a Final Sale or custom-embroidered item?",
+    "expected": "No. Final Sale and custom-embroidered items cannot be returned unless defective.",
+    "answer": "No. Final Sale and custom‑embroidered items are not eligible for return unless they are defective. [source: policy excerpt]",
+    "retrieved": true,
+    "auto_pass": true
+  },
+  {
+    "id": "holiday_window",
+    "question": "I bought a gift on November 15th. Until when can it be returned?",
+    "expected": "Holiday gift purchases made 1 Nov to 31 Dec can be returned until 31 Jan.",
+    "answer": "The return period for holiday gift purchases made between Nov 1 and Dec 31 is extended to **January 31**. [source: Return Window Exceptions]",
+    "retrieved": true,
+    "auto_pass": true
+  },
+  {
+    "id": "return_window",
+    "question": "How many days do I have to return an item, and what condition must it be in?",
+    "expected": "30 days from delivery; unworn, unwashed, no odors, tags attached.",
+    "answer": "You have **30 days** from delivery to return an item — as long as it meets the eligibility criteria. The item must be **unworn** (i.e., in its original, unused condition). (Note that “Final Sale” and custom‑embroidered items are not returnable unless they’re defective.)【source: Easy‑Fit Promise – “send it back within **30 days** of delivery for a refund or free size exchange.”】【source: Eligibility Checklist – “● Unworn.”】",
+    "retrieved": true,
+    "auto_pass": false
+  },
+  {
+    "id": "free_shipping",
+    "question": "Is standard shipping free in the US?",
+    "expected": "Free for orders of $75 or more; $7.95 below $75.",
+    "answer": "Yes—standard U.S. shipping is free on orders of $75 or more (orders under $75 cost $7.95).【source: “≥$75 | **FREE** … <$75 | 7.95”】",
+    "retrieved": true,
+    "auto_pass": true
+  },
+  {
+    "id": "east_coast",
+    "question": "How long does standard delivery take to the US East Coast?",
+    "expected": "4 to 5 business days.",
+    "answer": "Standard delivery to the US East Coast takes **4 – 5 business days**【source: Service Levels & Transit Targets table】.",
+    "retrieved": true,
+    "auto_pass": true
+  },
+  {
+    "id": "address_change",
+    "question": "I entered the wrong shipping address. Can I still change it?",
+    "expected": "Contact logistics@everstorm.example within 30 minutes of placing the order; once manifested it cannot be rerouted.",
+    "answer": "You can only change the shipping address if you act within 30 minutes of placing the order. After that point (once the parcel is “manifested”) the address can’t be edited. Contact logistics@everstorm.example as soon as possible.  \n\n[source: “7 Changing Your Address … within 30 min of order placement. Once the parcel is ‘Manifested,’ we”]",
+    "retrieved": true,
+    "auto_pass": true
+  },
+  {
+    "id": "crypto",
+    "question": "Can I pay with cryptocurrency?",
+    "expected": "Yes, USDC on Ethereum Mainnet for orders above $500, via Coinbase Commerce.",
+    "answer": "Yes. We accept cryptocurrency — specifically USDC on the Ethereum Mainnet—for orders over $500. Just select **“Coinbase Commerce”** at checkout; the exchange rate is locked for 15 minutes.【source: CONTEXT】",
+    "retrieved": true,
+    "auto_pass": true
+  },
+  {
+    "id": "gift_return",
+    "question": "If someone returns a gift I bought them, will I get the refund?",
+    "expected": "No. Gift returns are issued as store credit to the recipient, and the original purchaser is not notified.",
+    "answer": "If a gift is returned, the refund is issued as store‑credit that is emailed to the gift recipient—not to the original buyer. The purchaser is not notified of the return. [source: Gifts return for **store credit** emailed to the recipient; original purchaser is not notified.]",
+    "retrieved": true,
+    "auto_pass": true
+  },
+  {
+    "id": "warranty",
+    "question": "My boot sole separated after 8 months. Is that covered?",
+    "expected": "Yes. Manufacturing defects such as sole separation are covered for 12 months; file a Warranty Claim with 3 photos.",
+    "answer": "Yes. Sole separation is listed as a manufacturing defect covered for one year, so an issue that occurs after 8 months is eligible for a warranty claim. To start, select **“Warranty Claim”** in the portal and upload three photos of the defect; approved claims will ship a replacement the next business day. [source: Warranty Claims (12 months) – “Manufacturing defects (seam failure, sole separation, zipper loss) are covered for one year.”]",
+    "retrieved": true,
+    "auto_pass": true
+  },
+  {
+    "id": "unanswerable",
+    "question": "Do you offer price matching if I find a lower price elsewhere?",
+    "expected": "Not covered by the documents; the bot should say it doesn't know.",
+    "answer": "I don't know based on the retrieved documents.",
+    "retrieved": null,
+    "auto_pass": true
+  }
+]

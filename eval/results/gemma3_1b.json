@@ -1,0 +1,82 @@
+[
+  {
+    "id": "final_sale",
+    "question": "Can I return a Final Sale or custom-embroidered item?",
+    "expected": "No. Final Sale and custom-embroidered items cannot be returned unless defective.",
+    "answer": "I'm not sure from the docs.",
+    "retrieved": true,
+    "auto_pass": false
+  },
+  {
+    "id": "holiday_window",
+    "question": "I bought a gift on November 15th. Until when can it be returned?",
+    "expected": "Holiday gift purchases made 1 Nov to 31 Dec can be returned until 31 Jan.",
+    "answer": "The return window for gifts is 30 days from the delivery date. [source: Everstorm Outfitsters Return & Exchange Policy]",
+    "retrieved": true,
+    "auto_pass": false
+  },
+  {
+    "id": "return_window",
+    "question": "How many days do I have to return an item, and what condition must it be in?",
+    "expected": "30 days from delivery; unworn, unwashed, no odors, tags attached.",
+    "answer": "We issue refunds the same day your return is scanned. Banks typically post credit within:\n\n*   Card: 5-7 banking days\n*   PayPal: immediate\n*   Klarna: 2-5 days\n\nShop Pay Installments voids remaining payments or refunds for\n\n12 months. Items showing heavy wear (mud, pet hair, smoke) will be shipped back or donated to charity at our discretion minus a $15 handling fee.\n\nContact us: returns@everstorm.example",
+    "retrieved": true,
+    "auto_pass": false
+  },
+  {
+    "id": "free_shipping",
+    "question": "Is standard shipping free in the US?",
+    "expected": "Free for orders of $75 or more; $7.95 below $75.",
+    "answer": "Yes, according to the context, standard shipping is FREE in the United States. It states “Standard (Business Days) → order by 13:00 PT” and “Basket Total | USA  Std  |  USA  Exp  |  Canada  Std  |  EU  Std*  |  |--------------|---------|---------|------------|---------|  |",
+    "retrieved": true,
+    "auto_pass": false
+  },
+  {
+    "id": "east_coast",
+    "question": "How long does standard delivery take to the US East Coast?",
+    "expected": "4 to 5 business days.",
+    "answer": "Standard delivery takes approximately 2–3 business days to the U.S. East Coast. [source: UPS Ground/Air Saver]",
+    "retrieved": true,
+    "auto_pass": false
+  },
+  {
+    "id": "address_change",
+    "question": "I entered the wrong shipping address. Can I still change it?",
+    "expected": "Contact logistics@everstorm.example within 30 minutes of placing the order; once manifested it cannot be rerouted.",
+    "answer": "Yes, you can change your shipping address within 30 minutes of placing the parcel at origin terminal. You can do this by selecting “Refund” or “Exchange.” [source: Context]",
+    "retrieved": true,
+    "auto_pass": true
+  },
+  {
+    "id": "crypto",
+    "question": "Can I pay with cryptocurrency?",
+    "expected": "Yes, USDC on Ethereum Mainnet for orders above $500, via Coinbase Commerce.",
+    "answer": "I'm not sure from the docs.",
+    "retrieved": true,
+    "auto_pass": false
+  },
+  {
+    "id": "gift_return",
+    "question": "If someone returns a gift I bought them, will I get the refund?",
+    "expected": "No. Gift returns are issued as store credit to the recipient, and the original purchaser is not notified.",
+    "answer": "Yes, you should receive a full refund for the gift. [source: Returns Policy Document] The document states that if an item is returned within 30 days of delivery, you will receive a full refund. [source: Return Window Exceptions] Holiday gift purchases made before November 30th, 2025, are extended to January 31st for return periods.",
+    "retrieved": true,
+    "auto_pass": false
+  },
+  {
+    "id": "warranty",
+    "question": "My boot sole separated after 8 months. Is that covered?",
+    "expected": "Yes. Manufacturing defects such as sole separation are covered for 12 months; file a Warranty Claim with 3 photos.",
+    "answer": "I'm not sure from the docs.",
+    "retrieved": true,
+    "auto_pass": false
+  },
+  {
+    "id": "unanswerable",
+    "question": "Do you offer price matching if I find a lower price elsewhere?",
+    "expected": "Not covered by the documents; the bot should say it doesn't know.",
+    "answer": "I'm not sure from the docs.",
+    "retrieved": null,
+    "auto_pass": true
+  }
+]

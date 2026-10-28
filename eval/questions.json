@@ -1,0 +1,108 @@
+[
+  {
+    "id": "final_sale",
+    "question": "Can I return a Final Sale or custom-embroidered item?",
+    "expected": "No. Final Sale and custom-embroidered items cannot be returned unless defective.",
+    "must_include": [
+      "defective"
+    ],
+    "must_not_include": [
+      "are eligible for a refund",
+      "can be returned for a refund"
+    ],
+    "evidence": "custom-embroidered"
+  },
+  {
+    "id": "holiday_window",
+    "question": "I bought a gift on November 15th. Until when can it be returned?",
+    "expected": "Holiday gift purchases made 1 Nov to 31 Dec can be returned until 31 Jan.",
+    "must_include": [
+      "31 jan|january 31"
+    ],
+    "must_not_include": [],
+    "evidence": "31 Jan"
+  },
+  {
+    "id": "return_window",
+    "question": "How many days do I have to return an item, and what condition must it be in?",
+    "expected": "30 days from delivery; unworn, unwashed, no odors, tags attached.",
+    "must_include": [
+      "30 days",
+      "tags"
+    ],
+    "must_not_include": [],
+    "evidence": "30 days"
+  },
+  {
+    "id": "free_shipping",
+    "question": "Is standard shipping free in the US?",
+    "expected": "Free for orders of $75 or more; $7.95 below $75.",
+    "must_include": [
+      "75"
+    ],
+    "must_not_include": [],
+    "evidence": "Basket"
+  },
+  {
+    "id": "east_coast",
+    "question": "How long does standard delivery take to the US East Coast?",
+    "expected": "4 to 5 business days.",
+    "must_include": [
+      "4",
+      "5"
+    ],
+    "must_not_include": [],
+    "evidence": "East Coast"
+  },
+  {
+    "id": "address_change",
+    "question": "I entered the wrong shipping address. Can I still change it?",
+    "expected": "Contact logistics@everstorm.example within 30 minutes of placing the order; once manifested it cannot be rerouted.",
+    "must_include": [
+      "30 min"
+    ],
+    "must_not_include": [],
+    "evidence": "30 min"
+  },
+  {
+    "id": "crypto",
+    "question": "Can I pay with cryptocurrency?",
+    "expected": "Yes, USDC on Ethereum Mainnet for orders above $500, via Coinbase Commerce.",
+    "must_include": [
+      "usdc",
+      "500"
+    ],
+    "must_not_include": [],
+    "evidence": "USDC"
+  },
+  {
+    "id": "gift_return",
+    "question": "If someone returns a gift I bought them, will I get the refund?",
+    "expected": "No. Gift returns are issued as store credit to the recipient, and the original purchaser is not notified.",
+    "must_include": [
+      "store credit"
+    ],
+    "must_not_include": [],
+    "evidence": "store credit"
+  },
+  {
+    "id": "warranty",
+    "question": "My boot sole separated after 8 months. Is that covered?",
+    "expected": "Yes. Manufacturing defects such as sole separation are covered for 12 months; file a Warranty Claim with 3 photos.",
+    "must_include": [
+      "warranty"
+    ],
+    "must_not_include": [],
+    "evidence": "sole separation"
+  },
+  {
+    "id": "unanswerable",
+    "question": "Do you offer price matching if I find a lower price elsewhere?",
+    "expected": "Not covered by the documents; the bot should say it doesn't know.",
+    "must_include": [
+      "not sure|don't know|do not know|not mentioned|no information|doesn't mention|does not mention|not specified|not provide"
+    ],
+    "must_not_include": [],
+    "evidence": null
+  }
+]
